@@ -5,6 +5,14 @@ $(function() {
 	var navbar_height = $('.navbar').height();
 	$('.bg-transparent').css('margin-top',-navbar_height+'px');
 
+  /* SMOOTH SCROLL */
+  $('.nav-link, .navbar-brand').click(function(e) {
+    var sectionTo = $(this).attr('href');
+    $('html, body').animate({
+     scrollTop: $(sectionTo).offset().top - navbar_height
+    }, 1500);
+	});
+
   $(window).scroll(function () {
 
   	/* CHANGE COVER'S BACKGROUND COLOUR ON SCROLL */
@@ -28,6 +36,7 @@ $(function() {
 	    $('.navbar').addClass('bg-transparent');
 	    $('.navbar').css('margin-top',-navbar_height+'px');
 	  }
-   });
+  
+  });
 
 });

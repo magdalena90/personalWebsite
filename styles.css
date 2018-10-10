@@ -4,7 +4,6 @@ body, html { height: 100% }
 h1 {
 	font-family: Amatic SC !important;
 	font-size: 13vw !important;
-	/*font-weight: bold !important;*/
 }
 
 h2 {
@@ -18,12 +17,19 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
+	h1 { font-size: 15vw !important }
+	h2 {font-size: 8vw !important }
+}
+
+@media screen and (max-width: 500px) {
 	h1 { font-size: 20vw !important }
 	h2 {font-size: 12vw !important }
 }
 
 p {
 	font-family: Quicksand;
+	text-align: justify;
+  text-justify: inter-word;
 }
 
 /* COVER */
@@ -43,6 +49,7 @@ p {
 	font-family: Amatic SC;
   font-size: 30px;
   color: white;
+  text-align: right;
 }
 
 .cover_color_layer {
@@ -55,13 +62,9 @@ p {
   transition: 2s all;
 }
 
-.cover_color_layer_acqua {
-	background: rgba(66, 127, 93, 0.6);
-}
+.cover_color_layer_acqua { background: rgba(66, 127, 93, 0.6) }
 
-.cover_color_layer_transparent {
-	background: rgba(66, 127, 93, 0.3);
-}
+.cover_color_layer_transparent { background: rgba(66, 127, 93, 0.3) }
 
 .cover_txt {
 	text-align: center;
@@ -75,6 +78,7 @@ p {
 
 .cover_txt h2 { color: white !important }
 
+
 /* NAVBAR */
 .navbar { padding: 0 16px !important }
 
@@ -83,10 +87,6 @@ p {
 	font-family: Amatic SC;
 	font-size: 3.2vw;
 	padding: 0 0 5px 0;
-	-webkit-transition: 1.5s all;
-  -moz-transition: 1.5s all;
-  -o-transition: 1.5s all;
-  transition: 1.5s all;
 }
 
 @media screen and (min-width: 992px) {
@@ -94,23 +94,43 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+	.navbar a { font-size: 6vw !important }
+}
+
+@media screen and (max-width: 500px) {
 	.navbar a { font-size: 8vw !important }
 }
 
-.navbar a:hover { font-size: 3.4vw }
-
-/*.bg-transparent { margin-top: -55px }*/
+.navbar a:hover { font-weight: bold }
 
 .bg-transparent .navbar-brand { opacity: 0 }
 
-.bg-transparent .show {
-	background: rgba(66, 127, 93, 0.8);;
-}
+.bg-transparent .show { background: rgba(66, 127, 93, 0.8) }
 
 .navbar-brand {
 	font-family: Amatic SC;
 	font-size: 30px !important;
 	font-weight: bold;
+	-webkit-transition: 3s all;
+  -moz-transition: 3s all;
+  -o-transition: 3s all;
+  transition: 3s all;
 }
 
 .navbar-nav { width: 100% }
+
+
+/* SECTIONS */
+.section {
+/*	padding-top: 15px;*/
+	padding: 20px 25px !important;
+}
+
+/* ABOUT */
+.about_img {
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.about_img { padding: 30px }
+}
