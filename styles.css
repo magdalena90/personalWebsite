@@ -134,3 +134,89 @@ p {
 @media screen and (max-width: 768px) {
 	.about_img { padding: 30px }
 }
+
+/* PROJECTS */
+.projects_section {
+	background-image: url(imgs/qRoo2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;	
+}
+
+#projects { color: white }
+
+.project {
+	padding-bottom: 100%;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project_content {
+	background: transparent;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 10% 5%;
+  text-align: center;
+  -webkit-transition: 2s all;
+  -moz-transition: 2s all;
+  -o-transition: 2s all;
+  transition: 2s all;
+}
+
+@media screen and (max-width: 768px) {
+	.project_content { background: rgba(89, 146, 84, .8); }
+}
+
+.project_content:hover {
+	background: rgba(89, 146, 84, .9);
+}
+
+.table{
+  display:table;
+  height:100%;
+  width:100%;
+}
+
+.table-cell{
+  display:table-cell;
+  vertical-align:middle;
+  height:100%;
+  width:100%;
+  opacity: 0;
+  font-family: Quicksand;
+  -webkit-transition: 2s all;
+  -moz-transition: 2s all;
+  -o-transition: 2s all;
+  transition: 2s all;
+}
+
+.table-cell p {
+  color: white;
+  text-align: center !important;
+}
+
+.table-cell:hover {
+	opacity: 1;
+}
+
+#project_MSc_Diss { background-image: url('imgs/projects/MScDiss.png') }
+
+#project_IRR { background-image: url('imgs/projects/IRR.png') }
+
+#project_MLP { background-image: url('imgs/projects/MLP.png') }
+
+#project_twttr { background-image: url('imgs/projects/twttr.png') }
+
+#project_trump_hilary { background-image: url('imgs/projects/trump.png') }
+
+#project_PULearning { background-image: url('imgs/projects/PULearning.png') }
+
+#project_Aalto { background-image: url('imgs/projects/Aalto.png') }
+
+#project_tesis { background-image: url('imgs/projects/tesis.png') }

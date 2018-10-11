@@ -1,4 +1,16 @@
 
+function is_touch_device() {
+  var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
+  var mq = function(query) {
+    return window.matchMedia(query).matches;
+  }
+  if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+    return true;
+  }
+  var query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('');
+  return mq(query);
+}
+
 $(function() {
 
 	/* GET NAVBAR HEIGHT */
@@ -12,6 +24,13 @@ $(function() {
      scrollTop: $(sectionTo).offset().top - navbar_height
     }, 1500);
 	});
+
+	/* TOUCH DEVISE CORRECTIONS */
+	var touch = is_touch_device()
+	if ( touch == true ) {
+		$('.project_content').css('background', 'rgba(89, 146, 84, .8)');
+		$('.table-cell').css('opacity','1');
+	}
 
   $(window).scroll(function () {
 
