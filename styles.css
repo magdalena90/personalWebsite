@@ -1,31 +1,30 @@
 
 body, html { height: 100% }
 
-h1, h2 { font-family: Amatic SC !important }
+h1, h2, h3 { font-family: Amatic SC !important }
 
 h1 { font-size: 13vw !important }
 
 h2 { font-size: 6.3vw !important }
 
-h3 {
-	font-family: Amatic SC !important;
-	font-weight: bold !important;
-	color: white !important;
-}
+h3 { font-size: 5vw !important }
 
 @media screen and (min-width: 992px) {
 	h1 { font-size: 10vw !important }
-	h2 {font-size: 5vw !important }
+	h2 { font-size: 5vw !important }
+	h3 { font-size: 3vw !important }
 }
 
 @media screen and (max-width: 768px) {
 	h1 { font-size: 15vw !important }
-	h2 {font-size: 8vw !important }
+	h2 { font-size: 8vw !important }
+	h3 { font-size: 6vw !important }
 }
 
 @media screen and (max-width: 500px) {
 	h1 { font-size: 20vw !important }
 	h2 {font-size: 12vw !important }
+	h3 { font-size: 9vw !important }
 }
 
 p {
@@ -198,10 +197,10 @@ button, button:active {
   width:100%;
   opacity: 0;
   font-family: Quicksand;
-  -webkit-transition: 2s all;
-  -moz-transition: 2s all;
-  -o-transition: 2s all;
-  transition: 2s all;
+  -webkit-transition: 1s all;
+  -moz-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
 }
 
 .table-cell p {
@@ -266,6 +265,12 @@ button, button:active {
 	opacity: 1 !important;
 }
 
+.modal h3 {
+	font-weight: bold !important;
+	color: white !important;
+	font-weight: 1.75rem;
+}
+
 .modal-subtitle {
 	color: white !important;
 	font-weight: bold !important;
@@ -285,3 +290,9 @@ button, button:active {
 	font-size: 30px;
 	padding: 0 10px 10px 10px;
 }
+
+/* PROGRAMMING */
+.progress-bar {
+	background-color: rgba(66, 127, 93, 0.8) !important;
+}
+
