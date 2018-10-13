@@ -39,6 +39,25 @@ button, button:active {
 	cursor:pointer;
 }
 
+footer {background: black }
+
+footer i {
+	color: #212529;
+	margin-left: 10px;
+	font-size: 1.2rem;
+}
+
+/* SWEET ALERT */
+.swal2-title {
+	font-size: 5vw !important;
+	font-weight: lighter !important;
+}
+
+.swal2-content {
+	font-family: Quicksand;
+	padding-bottom: 15px;
+}
+
 /* COVER */
 .cover_img { 
 	background-image: url('imgs/qRoo1.jpg');

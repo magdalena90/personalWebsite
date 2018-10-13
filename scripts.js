@@ -16,14 +16,37 @@ function is_touch_device() {
 window.onload = function() {
 	$('#contact-form').submit(function(e) {
 		e.preventDefault();
-		/*emailjs.sendForm('gmail', 'template_zbfsSQ58', this);*/
-		swal({
-			type: 'success',
-			title: 'Message sent',
-			text: 'Thank you for contacting me! I\'ll get in touch with you as soon as I can',
-			showConfirmButton: false,
-			timer: 4000
-		});
+		if(this.contact.value.length<2 & this.user_email.value.length<7){
+			swal({
+				type: 'warning',
+				title: 'Please write your email and a message',
+				showConfirmButton: false,
+				timer: 4000
+			});
+		} else if (this.contact.value.length<2) {
+			swal({
+				type: 'warning',
+				title: 'Please write a message',
+				showConfirmButton: false,
+				timer: 4000
+			});
+		} else if (this.user_email.value.length<7) {
+			swal({
+				type: 'warning',
+				title: 'Please write your email',
+				showConfirmButton: false,
+				timer: 4000
+			});
+		} else {
+			emailjs.sendForm('gmail', 'template_zbfsSQ58', this);
+			swal({
+				type: 'success',
+				title: 'Message sent',
+				text: 'Thank you for contacting me! I\'ll get in touch with you as soon as I can',
+				showConfirmButton: false,
+				timer: 4000
+			});
+		}
 	});
 }
 
