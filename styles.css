@@ -54,11 +54,11 @@ footer i {
 }
 
 @media screen and (max-width: 500px) {
-	.swal2-title { font-size: 8vw !important; }
+	.swal2-title { font-size: 8vw !important }
 }
 
 @media screen and (min-width: 992px) {
-	.swal2-title { font-size: 2.7vw !important; }
+	.swal2-title { font-size: 2.7vw !important }
 }
 
 .swal2-content {
@@ -89,11 +89,11 @@ footer i {
 .cover_color_layer {
 	width: 100%;
 	height: 100%;
-	transition: 2s all;
-	-webkit-transition: 2s all;
-	-moz-transition: 2s all;
-	-o-transition: 2s all;
-	transition: 2s all;
+	transition: background 1.5s ease-in;
+	-webkit-transition: background 1.5s ease-in;
+	-moz-transition: background 1.5s ease-in;
+	-o-transition: background 1.5s ease-in;
+	transition: background 1.5s ease-in;
 }
 
 .cover_color_layer_acqua { background: rgba(66, 127, 93, 0.6) }
@@ -145,10 +145,10 @@ footer i {
 	font-family: Amatic SC;
 	font-size: 30px !important;
 	font-weight: bold;
-	-webkit-transition: 3s all;
-	-moz-transition: 3s all;
-	-o-transition: 3s all;
-	transition: 3s all;
+	-webkit-transition: opacity 3s ease-in;
+	-moz-transition: opacity 3s ease-in;
+	-o-transition: opacity 3s ease-in;
+	transition: opacity 3s ease-in;
 }
 
 .navbar-nav { width: 100% }
@@ -168,9 +168,7 @@ footer i {
 	.about_img { padding: 20px 40px }
 }
 
-.about_links_1, .about_links_2, .about_links_3 {
-	text-align: center;
-}
+.about_links_1, .about_links_2, .about_links_3 { text-align: center }
 
 .about_links_1 i, .about_links_2 i, .about_links_3 i {
 	color: rgba(66, 127, 93, 1);
@@ -226,41 +224,43 @@ footer i {
 	-webkit-transition: 2s all;
 	-moz-transition: 2s all;
 	-o-transition: 2s all;
-	transition: 2s all;
-}
-
-@media screen and (max-width: 768px) {
-	.project_content { background: rgba(89, 146, 84, .8) }
+	transition: background 2s ease-in;
 }
 
 .project_content:hover { background: rgba(89, 146, 84, .9) }
 
-.table{
+.table {
 	display:table;
 	height:100%;
 	width:100%;
 }
 
-.table-cell{
+.table-cell {
 	display:table-cell;
 	vertical-align:middle;
 	height:100%;
 	width:100%;
 	opacity: 0;
 	font-family: Quicksand;
-	-webkit-transition: 1s all;
-	-moz-transition: 1s all;
-	-o-transition: 1s all;
-	transition: 1s all;
+	-webkit-transition: opacity 1s ease-in;
+	-moz-transition: opacity 1s ease-in;
+	-o-transition: opacity 1s ease-in;
+	transition: opacity 1s ease-in;
 }
+
+.table-cell:hover { opacity: 1 }
 
 .table-cell p {
 	color: white;
 	text-align: center !important;
 }
 
-.table-cell:hover {
-	opacity: 1;
+@media screen and (max-width: 880px) {
+	.table-cell p { font-size: .9rem }
+}
+
+@media screen and (max-width: 500px) {
+	.table-cell p { font-size: .75rem }
 }
 
 #project_MSc_Diss { background-image: url('imgs/projects/MScDiss2.png') }
@@ -289,9 +289,7 @@ footer i {
   background-attachment: fixed;
 }
 
-.modal-body {
-	background: rgba(89, 146, 84, .6);
-}
+.modal-body { background: rgba(89, 146, 84, .6) }
 
 .modal-body-text {
 	padding: 5px 15px;
@@ -343,7 +341,16 @@ footer i {
 }
 
 /* PROGRAMMING */
-.progress-bar { background-color: rgba(66, 127, 93, 0.8) !important }
+.progress-bar {
+	background: rgba(66, 127, 93, 0.8) !important;
+	-webkit-transition: background 0.3s ease-in !important;
+	-moz-transition: background 0.3s ease-in !important;
+	-o-transition: background 0.3s ease-in !important;
+	transition: background 0.3s ease-in !important;
+	transition: background 0.3s ease-in !important;
+}
+
+.progress-bar:hover { background: rgba(66, 127, 93, 1) !important }
 
 /* CERTIFICATES */
 .certificates_section {

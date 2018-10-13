@@ -71,6 +71,11 @@ $(function() {
 		$('.table-cell').css('opacity','1');
 	}
 
+	/* CLOSE COLLAPSIBLE NAVBAR ON CLICK */
+	$('.navbar-collapse a').click(function() {
+    $('.navbar-collapse').removeClass('show');
+   });
+
 	$(window).scroll(function () {
 
 		/* CHANGE COVER'S BACKGROUND COLOUR ON SCROLL */
