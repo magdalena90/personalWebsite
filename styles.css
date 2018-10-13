@@ -33,6 +33,15 @@ p {
 	text-justify: inter-word;
 }
 
+a {
+	text-decoration: none !important;
+	color: rgba(53, 97, 100, .8) !important;
+}
+
+a:hover {
+	color: rgba(53, 97, 100, 1) !important;
+}
+
 button, button:active {
 	border: none !important;
 	outline: none !important;
@@ -171,9 +180,17 @@ footer i {
 .about_links_1, .about_links_2, .about_links_3 { text-align: center }
 
 .about_links_1 i, .about_links_2 i, .about_links_3 i {
-	color: rgba(66, 127, 93, 1);
+	color: #427f5d;
 	font-size: 2rem;
 	padding: 15px;
+	-webkit-transition: color .5s ease-in;
+	-moz-transition: color .5s ease-in;
+	-o-transition: color .5s ease-in;
+	transition: color .5s ease-in;
+}
+
+.about_links_1 i:hover, .about_links_2 i:hover, .about_links_3 i:hover {
+	color: #346549;
 }
 
 .about_links_1, .about_links_2 { display: none }
@@ -221,10 +238,10 @@ footer i {
 	width: 100%;
 	padding: 10% 5%;
 	text-align: center;
-	-webkit-transition: 2s all;
-	-moz-transition: 2s all;
-	-o-transition: 2s all;
-	transition: background 2s ease-in;
+	-webkit-transition: background 1s ease-in;
+	-moz-transition: background 1s ease-in;
+	-o-transition: background 1s ease-in;
+	transition: background 1s ease-in;
 }
 
 .project_content:hover { background: rgba(89, 146, 84, .9) }
@@ -249,6 +266,7 @@ footer i {
 }
 
 .table-cell:hover { opacity: 1 }
+.project_content:hover .table-cell { opacity: 1 } /* Firefox fix */
 
 .table-cell p {
 	color: white;
@@ -363,6 +381,49 @@ footer i {
 
 #certificates { color: white }
 
+.certificate {
+	padding-bottom: 100%;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 79%;
+}
+
+.certificate_content {
+	background: transparent;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	padding: 10% 5%;
+	text-align: center;
+	color: white !important;
+	text-decoration: none !important;
+	-webkit-transition: background 1s ease-in;
+	-moz-transition: background 1s ease-in;
+	-o-transition: background 1s ease-in;
+	transition: background 1s ease-in;
+}
+
+.certificate_content:hover {
+	background: rgba(68, 126, 130, .8);
+	color: white !important;
+}
+
+#certificate_DNASeq { background-image: url('imgs/statements/algorithms4DNASeq.png') }
+
+#certificate_scalableML { background-image: url('imgs/statements/scalableML.png') }
+
+#certificate_introBigData { background-image: url('imgs/statements/introBigData.png') }
+
+#certificate_ML { background-image: url('imgs/statements/ML.png') }
+
+#certificate_dataAnalysis { background-image: url('imgs/statements/dataAnalysis.png') }
+
+#certificate_computing4DA { background-image: url('imgs/statements/computing4DA.png') }
+
 /* CONTACT */
 .center_text { text-align: center }
 
@@ -384,7 +445,7 @@ input[type='text'], input[type='email'] {
 input[type='text'], input[type='email'], textarea {
 	font-family: Quicksand !important;
 	padding: 1px 5px;
-	border: solid white;
+	border: solid 1px white;
 }
 
 input[type='submit'] {

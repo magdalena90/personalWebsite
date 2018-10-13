@@ -68,6 +68,7 @@ $(function() {
 	var touch = is_touch_device()
 	if ( touch == true ) {
 		$('.project_content').css('background', 'rgba(89, 146, 84, .8)');
+		$('.certificate_content').css('background', 'rgba(68, 126, 130, .8)');
 		$('.table-cell').css('opacity','1');
 	}
 
