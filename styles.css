@@ -292,7 +292,64 @@ button, button:active {
 }
 
 /* PROGRAMMING */
-.progress-bar {
-	background-color: rgba(66, 127, 93, 0.8) !important;
+.progress-bar { background-color: rgba(66, 127, 93, 0.8) !important }
+
+/* CERTIFICATES */
+.certificates_section {
+	background-image: url(imgs/qRoo4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;	
 }
+
+#certificates { color: white }
+
+/* CONTACT */
+
+.contact_section { background: #333333 }
+
+#contact { color: white }
+
+.user_name_container { text-align: right }
+
+@media screen and (max-width: 576px) {
+	.user_name_container, .email_container { text-align: center }
+}
+
+input[type='text'], input[type='email'] {
+	margin-bottom: 20px;
+	width: 250px;
+}
+
+input[type='text'], input[type='email'], textarea {
+	font-family: Quicksand !important;
+	padding: 1px 5px;
+	border: solid white;
+}
+
+input[type='submit'] {
+	font-family: Amatic SC;
+	font-size: 2rem;
+	color: white;
+	background: transparent;
+	padding: 2px 18px;
+	border: 1px solid white;
+	margin: 10px 0 25px 0;
+}
+
+@media screen and (min-width: 576px) {
+	textarea { width: 530px !important }
+}
+
+textarea {
+	vertical-align: top;
+	margin-left: 5px !important;
+	margin-bottom: 30px !important;
+	width: 250px;
+}​
+
+.align_right_text { text-align: right }
+
+.center_text { text-align: center }
 

@@ -1,4 +1,5 @@
 
+/* TRANSFORM HOVER ACTIONS FOR TOUCH SCREENS */
 function is_touch_device() {
   var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
   var mq = function(query) {
@@ -9,6 +10,14 @@ function is_touch_device() {
   }
   var query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('');
   return mq(query);
+}
+
+/* SEND FORM USING EMAILJS SDK */
+window.onload = function() {
+  $('#contact-form').submit(function(e) {
+    e.preventDefault();
+    emailjs.sendForm('gmail', 'template_zbfsSQ58', this);
+  });
 }
 
 $(function() {
