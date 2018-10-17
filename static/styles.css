@@ -88,6 +88,11 @@ footer i {
 	background-attachment: fixed;
 	text-align: right;
 	padding: 0 !important;
+	box-sizing: content-box !important;
+}
+
+_::-webkit-full-page-media, _:future, :root .safari_only .cover_img {
+	background-attachment: scroll;
 }
 
 .cover_img p {
@@ -219,7 +224,12 @@ footer i {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;	
+	background-attachment: fixed;
+	box-sizing: content-box !important;
+}
+
+_::-webkit-full-page-media, _:future, :root .safari_only .projects_section {
+	background-attachment: scroll;
 }
 
 #projects { color: white }
@@ -379,7 +389,12 @@ footer i {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;	
+	background-attachment: fixed;
+	box-sizing: content-box !important;
+}
+
+_::-webkit-full-page-media, _:future, :root .safari_only .certificates_section {
+	background-attachment: scroll;
 }
 
 #certificates { color: white }

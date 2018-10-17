@@ -64,7 +64,7 @@
 		{% set list_certificates = [ DNASeq, scalableML, introBigData, ML, dataAnalysis, computing4DA ] %}
 
 		{% for id, url, title, subtitle in list_certificates %}
-			{{ create_certificate( certificate_id, certificate_url, title, subtitle ) }}			
+			{{ create_certificate( id, url, title, subtitle ) }}			
 		{% endfor %}
 
 	</div>
