@@ -85,11 +85,31 @@ footer i {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	background-attachment: fixed;
 	text-align: right;
 	padding: 0 !important;
 	box-sizing: content-box !important;
 }
+
+.cover_img:after{
+	content: '';
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background: url('imgs/qRoo1.jpg') center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 
 _::-webkit-full-page-media, _:future, :root .safari_only .cover_img {
 	background-attachment: scroll;
@@ -171,7 +191,10 @@ _::-webkit-full-page-media, _:future, :root .safari_only .cover_img {
 .navbar-nav { width: 100% }
 
 /* SECTIONS */
-.section { padding: 20px 25px !important }
+.section {
+	padding: 20px 25px !important;
+	background: white;
+}
 
 /* ABOUT */
 .about_img { width: 100% }
@@ -223,7 +246,26 @@ _::-webkit-full-page-media, _:future, :root .safari_only .cover_img {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	background-attachment: fixed;
+}
+
+.projects_section:after{
+	content: '';
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background: url('imgs/qRoo2.jpg') center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 #projects { color: white }
@@ -309,10 +351,28 @@ _::-webkit-full-page-media, _:future, :root .safari_only .cover_img {
 	border: none;
 	background-image: url('imgs/qRoo2.jpg');
 	background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;
 }
+
+/*.modal-content:after{
+	content: '';
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background: url('imgs/qRoo2.jpg') center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}*/
 
 .modal-body { background: rgba(89, 146, 84, .6) }
 
@@ -383,7 +443,26 @@ _::-webkit-full-page-media, _:future, :root .safari_only .cover_img {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	background-attachment: fixed;
+}
+
+.certificates_section:after{
+	content: '';
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background: url('imgs/qRoo4.jpg') center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 #certificates { color: white }
