@@ -170,7 +170,6 @@ _::-webkit-full-page-media, _:future, :root .safari_only .cover_img {
 
 .navbar-nav { width: 100% }
 
-
 /* SECTIONS */
 .section { padding: 20px 25px !important }
 
@@ -225,11 +224,6 @@ _::-webkit-full-page-media, _:future, :root .safari_only .cover_img {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	box-sizing: content-box !important;
-}
-
-_::-webkit-full-page-media, _:future, :root .safari_only .projects_section {
-	background-attachment: scroll;
 }
 
 #projects { color: white }
@@ -390,11 +384,6 @@ _::-webkit-full-page-media, _:future, :root .safari_only .projects_section {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	box-sizing: content-box !important;
-}
-
-_::-webkit-full-page-media, _:future, :root .safari_only .certificates_section {
-	background-attachment: scroll;
 }
 
 #certificates { color: white }

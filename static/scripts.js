@@ -52,6 +52,18 @@ window.onload = function() {
 
 $(function() {
 
+	/* FIX BACKGROUND IMAGES FOR SAFARI IOs */
+	var ua = window.navigator.userAgent;
+	var iOS = !!ua.match(/iPad/i) || !!ua.match(/iPhone/i);
+	var webkit = !!ua.match(/WebKit/i);
+	var iOSSafari = iOS && webkit && !ua.match(/CriOS/i);
+
+	if ( iOSSafari == true ) {
+		$('.projects_section').css('background-attachment','scroll !important');
+		$('.certificates_section').css('background-attachment','scroll !important');
+		$('.modal_content').css('background-attachment','scroll !important');
+	};
+
 	/* GET NAVBAR HEIGHT */
 	var navbar_height = $('.navbar').height();
 	$('.bg-transparent').css('margin-top',-navbar_height+'px');
